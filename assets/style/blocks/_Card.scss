@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.Card {
+	display: flex;
+	margin-top: 1.5rem;
+	background-color: $light-green;
+	text-decoration: none;
+	max-width: 100%;
+
+	&--horizontal {
+		flex-direction: row;
+	}
+
+	&__img {
+		object-fit: cover;
+		vertical-align: top;
+		width: clamp(120px, 33%, 250px);
+	}
+
+	&__article {
+		padding: 1rem;
+		max-width: auto;
+	}
+
+	&__paragraph {
+		margin-top: 0.5rem;
+
+		@media #{$tablet} {
+			margin-top: 1rem;
+		}
+	}
+}

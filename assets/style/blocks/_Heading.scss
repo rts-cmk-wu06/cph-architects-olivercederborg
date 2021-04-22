@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.Heading {
+	color: $off-black;
+
+	&--big {
+		font-size: 3rem;
+	}
+
+	&--medium {
+		font-size: 2rem;
+	}
+
+	&--small {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+.Footer {
+	background-color: $off-black;
+	padding: 3rem 0 2rem;
+	color: $off-white;
+	margin-top: 2rem;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__address {
+		font-style: normal;
+		line-height: 24px;
+	}
+
+	&__socials {
+		display: flex;
+	}
+
+	&__social-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 1rem;
+		height: 2.25rem;
+		width: 2.25rem;
+		background-color: $dark-green;
+		text-decoration: none;
+		border-radius: 0.75rem;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+
+	&__copyright {
+		font-size: 0.75rem;
+		text-align: center;
+		margin-top: 3rem;
+	}
+}

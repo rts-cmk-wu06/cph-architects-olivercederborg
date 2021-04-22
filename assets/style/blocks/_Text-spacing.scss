@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.Text-spacing {
+	*:not(:last-child) {
+		margin-bottom: 0.5rem;
+
+		@media #{$tablet} {
+			margin-bottom: 1rem;
+		}
+	}
+}
